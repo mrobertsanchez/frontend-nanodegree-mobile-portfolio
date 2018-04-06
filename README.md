@@ -12,7 +12,7 @@ To view optimized files please navigate to 'dist' directory
 4. [HTML Minifier](https://kangax.github.io/html-minifier/) used to Minify index.html
 
 ####Optimizations Performed to images used in index.html
-4. pizzeria.jpg (located in 'dist/views/images') optimized and renamed as pizzeria-optimized.jpg to same directory reducing image size from 2079 KB to 32 KB. *Optimized photo provided by Google's [Pagespeed Insights](https://developers.google.com/speed/pagespeed/insights/).*
+4.  pizzeria.jpg (located in 'dist/views/images') optimized and renamed as pizzeria-optimized.jpg to same directory reducing image size from 2079 KB to 32 KB. *Optimized photo provided by Google's [Pagespeed Insights](https://developers.google.com/speed/pagespeed/insights/).*
 
 5. pizzeria-optimized.jpg further optimized by resizing pizzeria-optimized.jpg to avoid unnecessary inline css. New image renamed to pizzeria-small.jpg. This reduced image size from 32 KB to 3 KB. Gulp was used in combination with ImageMagick. *See Gulp Documentation.*
 5. profile-pic.jpg (located in 'dist/images') optimized and renamed as profile-pic.jpg to same directory. *Optimized photo provided by Google's [Pagespeed Insights](https://developers.google.com/speed/pagespeed/insights/)*
