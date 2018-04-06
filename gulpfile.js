@@ -7,13 +7,12 @@ gulp.task('webserver', function() {
 
 gulp.task('default', ['webserver']);
 
-var imagemin = require('gulp-imagemin');
 
-gulp.task('images', function(){
-  return gulp.src('app/views/images/**/*.+(png|jpg|jpeg|gif|svg)')
-  .pipe(imagemin())
-  .pipe(gulp.dest('dist/views/images'))
-});
+//gulp.task('images', function(){
+//  return gulp.src('app/views/images/**/*.+(png|jpg|jpeg|gif|svg)')
+  //.pipe(imagemin())
+  //.pipe(gulp.dest('dist/views/images'))
+//});
 
 var cache = require('gulp-cache');
 
