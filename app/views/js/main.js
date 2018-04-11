@@ -499,7 +499,11 @@ window.addEventListener('scroll', updatePositions);
 document.addEventListener('DOMContentLoaded', function() {
   var cols = 8;
   var s = 256;
-  for (var i = 0; i < 200; i++) {
+
+  var totalPizzasDisplayed = Math.ceil(window.innerHeight / s) * cols;
+// math.ceil used over math.round in order to avoid missing row of pizzas due to math.round rounding down
+
+  for (var i = 0; i < totalPizzasDisplayed; i++) {
     var elem = document.createElement('img');
     elem.className = 'mover';
     elem.src = "images/pizza-min.png";
