@@ -46,6 +46,7 @@ A. added `will-change:transform` to class "mover" for additional optimization
  3. `var newSize` removed
  4. `var checkPizzaSizes = document.querySelectorAll(".randomPizzaContainer");` Added to resizePizzas outside of for loop replacing `document.querySelectorAll(".randomPizzaContainer")[i].style.width = newwidth;` inside of the for loop. For loop will now use `var checkPizzaSlices` that is predefined outside of for loop avoiding bottleneck.
 3. [JS Compress](https://jscompress.com/) used to minify main.js
+4. Too many background pizzas being generated. Added new variable `totalPizzasDisplayed` to dynamically decide how many pizzas to generate based on `window.innerHeight` property
 
 #### Results
 
